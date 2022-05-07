@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Installation du script Pds-Contact-Simple</title>
+<script type="text/javascript" src= "http://code.jquery.com/jquery-latest.min.js"></script>
+<style type="text/css">
+	body {
+	background-color: #f1f1f1;
+	text-align:center;
+	font-family:Arial
+}
+
+#Etape1{
+	width:50%;
+	color:#444;
+	background:#fff;
+	border:2px solid #fff;
+	padding:5px 10px;
+	box-shadow:0px 1px 4px #000;
+	-moz-box-shadow:0px 1px 4px #000;
+	-webkit-box-shadow:0px 1px 4px #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-khtml-border-radius:4px;
+	margin:5px 10px;
+	text-align:center;
+	margin-right:auto;
+	margin-left:auto
+}
+#Etape1Presentation{
+	background-color:#e1e1e1
+}
+#Etape1Texte{
+	text-align:justify
+}
+
+#Etape2{
+	width:50%;
+	color:#444;
+	background:#fff;
+	border:2px solid #fff;
+	padding:5px 10px;
+	box-shadow:0px 1px 4px #000;
+	-moz-box-shadow:0px 1px 4px #000;
+	-webkit-box-shadow:0px 1px 4px #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-khtml-border-radius:4px;
+	margin:5px 10px;
+	text-align:center;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:30px
+}
+#Etape2Presentation{
+	background-color:#e1e1e1
+}
+#Etape2Texte{
+	text-align:justify
+}
+
+#Etape3{
+	width:50%;
+	color:#444;
+	background:#fff;
+	border:2px solid #fff;
+	padding:5px 10px;
+	box-shadow:0px 1px 4px #000;
+	-moz-box-shadow:0px 1px 4px #000;
+	-webkit-box-shadow:0px 1px 4px #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-khtml-border-radius:4px;
+	margin:5px 10px;
+	text-align:center;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:30px
+}
+#Etape3Presentation{
+	background-color:#e1e1e1
+}
+#Etape3Texte{
+	text-align:justify
+}
+
+#Code{
+	margin-left:20px;
+	margin-right:20px;
+	background-color:#f1f1f1;
+	border:1px dashed #ff0000;
+	padding:10px
+}
+</style>
+</head>
+<body>
+	<div id="PresentationInstallation">
+	<h2>Lisez moi du script Pds-Contact-Simple V1.0</h2>
+		<div id="Etape1">
+			<div id="Etape1Presentation">
+				<h3>Pr&eacute;sentation et Pr&eacute;requis</h3>
+			</div>
+			<div id="Etape1Texte">
+				Pds-Contact-Simple est un script d&eacute;v&eacute;lopp&eacute; en utilisant PHP, JQuery, HTML, Ajax et Javascript. Il vous permettra d'installer facilement sur votre site un formulaire
+				de contact qui permettra &agrave; vos visiteurs de vous contacter par email.<br /><br />
+				D'utilisation tr&egrave;s souple et facile, il vous suffit d'inclure une fonction dans une de vos pages PHP  afin d'afficher le formulaire.<br /><br />
+				Le script est tr&egrave;s facilement adaptable au graphisme de votre site via le fichier CSS.<br /><br />
+				Ce script n&eacute;cessite seulement que PHP version 5 soit install&eacute; sur votre serveur.<br /><br />
+				L'utilisation de Jquery et Ajax permet l'envoi du mail sans rechargement de la page.<br /><br />
+			</div>
+		</div>
+		<div id="Etape2">
+			<div id="Etape2Presentation">
+				<h3>Installation</h3>
+			</div>
+			<div id="Etape2Texte">
+				Pour installer le script, il vous suffit de suivre les &eacute;tapes suivantes:
+				<ul style="list-style-type:square;">
+					<li>1/ Ouvrez le fichier <strong>Config.php</strong> et indiquez vos informations</li>
+					<li>2/ Transf&eacute;rez tous les fichiers sur votre serveur, soit &agrave; la racine du site, soit dans un repertoire</li>
+					<li>3/ Sur votre page PHP, celle o&ugrave; vous souhaitez que le formulaire s'affiche, <strong>et avant tout code HTML</strong> , ins&eacute;rez le code suivant (Adaptez le code selon le r&eacute;pertoire du script):</li>
+				</ul>
+				<div id="Code">
+					&lt;? php<br />
+					require_once("ConfigPds.php");<br />
+					require_once("Fonctions.php");<br />
+					CreerFormulaireContact();<br />
+					?&gt;
+				</div>
+				<ul style="list-style-type:square;">
+					<li>4/ Ensuite, toujours sur la page o&ugrave; et &agrave; l'endroit o&ugrave; vous souhaitez afficher le formulaire, ins&eacute;rez le code suivant:</li>
+				</ul>
+				<div id="Code">
+					&lt;? php<br />
+					CreerFormulaireContact();<br />
+					?&gt;
+				</div>
+				<ul style="list-style-type:square;">
+					<li>5/ Transf&eacute;rez la page que vous venez de modifier vers votre serveur, lancez ensuite cette page et testez le r&eacute;sultat;) C'est tout!</li>
+				</ul>
+				<div>
+				<strong>Nota :</strong>Si le fichier o&ugrave; vous souhaitez afficher le formulaire n'est pas dans le m&ecirc;me r&eacute;pertoire que le script, vous devez d&eacute;placer le fichier Monofont.TTF dans le r&eacute;pertoire o&ugrave; se trouve le fichier qui affichera le formulaire!
+				</div>
+			</div>
+		</div>
+		<div id="Etape3">
+			<div id="Etape3Presentation">
+				<h3>Divers</h3>
+			</div>
+			<div id="Etape3Texte">
+				Ce script est enti&egrave;rement gratuit et utilisable &agrave; souhait. Si vous le modifiez, un petit email (webmaster@plusdescripts.fr) serait souhait&eacute; pour voir les modifications apport&eacute;es pour &eacute;ventuellement les int&eacute;grer dans le script.<br /><br />
+				Pour toute question, id&eacute;es ou bug, rendez vous sur le site plusdescripts.fr et le forum.<br /><br />
+				<a href="http://www.plusdescripts.fr" title="D&eacute;couvrez plusdescripts.fr">Plusdescripts.fr</a><br /><br />
+				Si vous avez aim&eacute; le script, merci de laisser un mot sur le livre d'or du site ;)<br /><br />
+			</div>
+		</div>
+	</div>
+</body>
+</html>

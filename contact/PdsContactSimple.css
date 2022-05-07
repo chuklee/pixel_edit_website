@@ -1,0 +1,98 @@
+#FormulaireContactSimple{
+	text-align:center;
+	margin-right:auto;
+	margin-left:auto;
+	width:40%
+}
+
+#FormulaireContactSimple fieldset{
+	border:2px solid #d1d1d1;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-khtml-border-radius:3px;
+	font-family:Arial
+}
+
+#FormulaireContactSimple input[type="text"], input[type="password"],  textarea{
+	color:#444;
+	border:1px solid #ccc;
+	padding:5px 10px;
+	box-shadow:0px 1px 0px #fff;
+	-moz-box-shadow:0px 1px 0px #fff;
+	-webkit-box-shadow:0px 1px 0px #fff;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-khtml-border-radius:4px;
+	margin:10px 10px;
+	width:50%;
+	text-align:center;
+}
+
+#FormulaireContactSimple textarea{
+	color:#444;
+	border:1px solid #ccc;
+	padding:5px 10px;
+	box-shadow:0px 1px 0px #fff;
+	-moz-box-shadow:0px 1px 0px #fff;
+	-webkit-box-shadow:0px 1px 0px #fff;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-khtml-border-radius:4px;
+	margin:10px 10px;
+	width:70%;
+	height:150px;
+	overflow:auto
+}
+
+#FormulaireContactSimple input:hover, textarea:hover{
+	background-color:#f1f1f1
+}
+
+#FormulaireContactSimple input[type="button"]{
+	border:1px solid #bbb;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-khtml-border-radius:3px;
+	background: -moz-linear-gradient(100% 100% 90deg, #d5d5d5, #eee);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#d5d5d5));
+	background: -webkit-linear-gradient(#eee, #d5d5d5);
+	background: -o-linear-gradient(#eee, #d5d5d5);
+	color:#232d3d;
+	font-size:12px;
+	font-weight:bold;
+	padding:4px 10px;
+	margin:15px 0px 10px 10px;
+	text-shadow:0px 1px 0px #fff;
+	cursor:pointer;
+	box-shadow:0px 1px 2px #ccc;
+	-moz-box-shadow:0px 1px 2px #ccc;
+	-webkit-box-shadow:0px 1px 2px #ccc;
+}
+
+.FormulaireContactSimpleRequis
+{
+	background:#ef7971;
+	color:#fff;
+	border:1px solid #e63125;
+	box-shadow:inset 0px 1px 0px #f4a49f;
+	text-shadow:0px -1px 0px #e63125;
+	font-weight:bold;
+	margin:5px;
+	padding:5px
+}
+
+.FormulaireContactSimpleOk
+{
+	background:#B5E655;
+	color:#000;
+	border:1px solid #96CA2D;
+	box-shadow:inset 0px 1px 0px #ffffff;
+	text-shadow:0px -1px 0px #96CA2D;
+	font-weight:bold;
+	margin:5px;
+	padding:5px
+}
